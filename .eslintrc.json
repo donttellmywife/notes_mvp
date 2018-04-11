@@ -1,0 +1,61 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "func-names": 0,
+    "no-var": 0,
+    "func-style": 0,
+    "comma-dangle": 0,
+    "valid-jsdoc": 0,
+    "vars-on-top": 0,
+    "complexity": [2, 8],
+    "max-depth": [2, 6],
+    "consistent-return": 0,
+    "id-match": 0,
+    "import/newline-after-import": 0,
+    "strict": 0,
+    "object-shorthand": 0,
+    "prefer-arrow-callback": 0,
+    "prefer-template": 0,
+    "babel/object-shorthand": 0,
+    "no-console": 1,
+    "no-use-before-define": 0,
+    "no-shadow": 0,
+    "ignorePureComponents": true,
+    "react/prefer-stateless-function": 1,
+    "import/no-unresolved": 1,
+    "import/extensions": 1,
+    "react/prop-types": 1,
+    "react/forbid-prop-types": 1,
+    "import/prefer-default-export": 1
+  },
+  "globals": {
+    "describe": false,
+    "it": false,
+    "expect": false,
+    "$on": false,
+    "beforeEach": false,
+    "DEVELOPMENT": true,
+    "ReactDOM": true,
+    "test": false
+  }
+}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Booktab component:  Booktab renders correctrly 1`] = `
+<div
+  className="undefined "
+>
+  <h1>
+    Program
+  </h1>
+  <input
+    defaultValue="Program"
+  />
+  <button>
+    Delete
+  </button>
+   |
+  <button>
+     Edit
+  </button>
+</div>
+`;
