@@ -39,67 +39,45 @@ html(lang='en')
         window.translateVersion=Date.now();
 
     script(src='/js/main.js?{version}')
-    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-85166144-6')
+    script(type='text/javascript').
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2138535059496327');
+      fbq('track', 'PageView');
+    noscript
+      div
+        img(src='https://www.facebook.com/tr?id=2138535059496327&ev=PageView', style='position:absolute; left:-9999px;')
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-85166144-9')
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-85166144-6');
+      gtag('config', 'UA-85166144-9');
     script(type='text/javascript').
-      (function (d, w, c) {
-        (w[c] = w[c] || []).push(function () {
-          try {
-            w.yaCounter46187409 = new Ya.Metrika({
-              id: 46187409,
-              clickmap: true,
-              trackLinks: true,
-              accurateTrackBounce: true,
-              webvisor: true,
-              trackHash: true
-            });
-          } catch (e) {
-          }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function () {
-            n.parentNode.insertBefore(s, n);
-          };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://d31j93rd8oukbv.cloudfront.net/metrika/watch_ua.js";
-
-        if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-          f();
-        }
-      })(document, window, "yandex_metrika_callbacks");
-    noscript
-      div
-        img(src='https://mc.yandex.ru/watch/46187409', style='position:absolute; left:-9999px;')
-    script(type='text/javascript').
-        if (domain !== 'tz') {
-          window.$zopim || (function(d, s) {
-              var z = $zopim = function(c) {
-                      z._.push(c)
-                  },
-                  $ = z.s = d.createElement(s),
-                  e = d.getElementsByTagName(s)[0];
-              z.set = function(o) {
-                  z.set._.push(o)
-              };
-              z._ = [];
-              z.set._ = [];
-              $.async = !0;
-              $.setAttribute('charset', 'utf-8');
-              $.src = 'https://v2.zopim.com/?29TguCvyFRPou8wTyoXrJ5o64Dlkwe3f';
-              z.t = +new Date;
-              $.type = 'text/javascript';
-              e.parentNode.insertBefore($, e)
-          })(document, 'script');
-        }
+        window.$zopim || (function(d, s) {
+            var z = $zopim = function(c) {
+                    z._.push(c)
+                },
+                $ = z.s = d.createElement(s),
+                e = d.getElementsByTagName(s)[0];
+            z.set = function(o) {
+                z.set._.push(o)
+            };
+            z._ = [];
+            z.set._ = [];
+            $.async = !0;
+            $.setAttribute('charset', 'utf-8');
+            $.src = 'https://v2.zopim.com/?5RIQ1ZSNtdOO6smNHPbJOzVnVq88lVEF';
+            z.t = +new Date;
+            $.type = 'text/javascript';
+            e.parentNode.insertBefore($, e)
+        })(document, 'script');
     script.
         (function(a, b, c, d, e) {
             a.ddjskey = e;
