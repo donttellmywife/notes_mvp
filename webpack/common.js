@@ -87,7 +87,7 @@ module.exports = {
     }),
     new MakeIndex({
       template: 'index.html',
-      title: 'woot',
+      title: 'watatatat',
     }),
     extractCss,
   ],

@@ -35,6 +35,7 @@ const dev = {
 
   devtool: 'inline-source-map',
   devServer: {
+    host: '0.0.0.0',
     hot: true,
     port: 8080,
     // proxy: {
