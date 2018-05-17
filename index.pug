@@ -16,7 +16,7 @@ html(lang='en')
     style.
       body {margin: 0;}.preloader {position: absolute;top: 0;z-index: 100;width: 100%;height: 100%;background-color: #353432;font-family: Helvetica, Arial, sans-serif;text-align: center;}.preloader__content {position: absolute;top: 50%;left: 0;right: 0;margin-top: -70px;color: #fff;font-size: 14px}.preloader-logo {position: relative;width: 56px;height: 56px;margin: 0 auto 18px;}.preloader-logo::before, .preloader-logo::after {position: absolute;top: 0;left: -9999px;content: '';width: 15px;height: 15px;background-color: #f5ae1b;-webkit-animation: cubemove 1.8s infinite ease-in-out;animation: cubemove 1.8s infinite ease-in-out}.preloader-logo:after {-webkit-animation-delay: -.9s;animation-delay: -.9s}@-webkit-keyframes cubemove {0% {left: 0;}25% {-webkit-transform: translateX(42px) rotate(270deg) scale(.5)}50% {-webkit-transform: translateX(42px) translateY(42px) rotate(180deg)}75% {-webkit-transform: translateX(0) translateY(42px) rotate(90deg) scale(.5)}100% {-webkit-transform: rotate(0deg);left: 0;}}@keyframes cubemove {0% {left: 0;}25% {transform: translateX(42px) rotate(270deg) scale(.5)}50% {transform: translateX(42px) translateY(42px) rotate(180deg)}75% {transform: translateX(0) translateY(42px) rotate(90deg) scale(.5)}100% {transform: rotate(0deg);left: 0;}}
     link(rel='shortcut icon', type='image/ico', href='/img/favicon.ico')
-    link(rel='stylesheet', href='/styles/styles.css?{version}')
+    link(rel='stylesheet', href='/styles/styles.css?1.14.76')
     link(rel='stylesheet', href='https://s3.amazonaws.com/icomoon.io/123877/airpmicons/style.css?x2tdi0')
   body
     notification(class-name='global')
@@ -38,7 +38,7 @@ html(lang='en')
     script.
         window.translateVersion=Date.now();
 
-    script(src='/js/main.js?{version}')
+    script(src='/js/main.js?1.14.76')
     script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-85166144-6')
     script.
       window.dataLayer = window.dataLayer || [];
@@ -82,17 +82,6 @@ html(lang='en')
     script(type='text/javascript').
         if (domain !== 'tz') {
           window.$zopim || (function(d, s) {
-              function getId(domain) {
-                switch (domain) {
-                  
-                  case 'ru': 
-                    return '4ntXE6izGVtRj2sHPF3CZ7BIuzxU6NG1';
-
-                  default: 
-                    return '29TguCvyFRPou8wTyoXrJ5o64Dlkwe3f';
-                }
-              }
-
               var z = $zopim = function(c) {
                       z._.push(c)
                   },
@@ -105,7 +94,7 @@ html(lang='en')
               z.set._ = [];
               $.async = !0;
               $.setAttribute('charset', 'utf-8');
-              $.src = 'https://v2.zopim.com/?' + getId(domain);
+              $.src = 'https://v2.zopim.com/?29TguCvyFRPou8wTyoXrJ5o64Dlkwe3f';
               z.t = +new Date;
               $.type = 'text/javascript';
               e.parentNode.insertBefore($, e)
